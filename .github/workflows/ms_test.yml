@@ -37,8 +37,7 @@ jobs:
       uses: Malcolmnixon/Setup-VSTest@v4
 
     - name: Check build output
-  　　run: Get-ChildItem "${{ github.workspace }}/src/UnitTest" -Recurse
-
+      run: Get-ChildItem "${{ github.workspace }}/src/UnitTest" -Recurse
 
     - name: VSTest
       run: vstest.console ./src/UnitTest/x64/${{ env.BUILD_CONFIGURATION }}/UnitTest.dll
