@@ -37,4 +37,5 @@ jobs:
       uses: Malcolmnixon/Setup-VSTest@v4
 
     - name: VSTest
-      run: vstest.console ./src/UnitTest/bin/${{ env.BUILD_CONFIGURATION }}/UnitTest.dll
+      run: vstest.console ./src/UnitTest/x64/${{ env.BUILD_CONFIGURATION }}/UnitTest.dll
+  
